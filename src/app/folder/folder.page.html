@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title align="center">Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="round" color="secondary" (click)="alert()"
+    >Send notification</ion-button
+  >
+  <ion-list>
+    <ion-item *ngFor="let n of scheduled">
+      <ion-label text-wrap>
+        {{ n.id }} {{ n.title }}
+        <p>Trigger: {{ n.trigger | json }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-card-content>
+    <ion-card>
+      <ion-card-header>
+        <div
+          class="pictures"
+          style="
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 5px rgb(red, green, blue) solid;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <img
+            src="assets/d.jpg"
+            alt="daffa"
+            width="200"
+            class="rounded-circle img-thumbnail"
+          />
+        </div>
+      </ion-card-header>
+      <ion-item>
+        <ion-label align="center">Nama : Muhammad Daffa Daminatila</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label align="center">Npm : 15200016 </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label align="center">Prodi : Teknik Informatika</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label align="center">Gender : Male </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label align="center">Tanggal lahir : 17-September-2003</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label align="center">Email : daffadaminatila1@gmail.com</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-card-content>
+</ion-content>

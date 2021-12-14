@@ -1,0 +1,10 @@
+{
+  "name": "quiz_daffa",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
